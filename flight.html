@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chalo Ghume | Travel Agency</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/assets/css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/flight.css" />
+  </head>
+  <body >
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/newimage/Chalo ghume-logo-transparent.png" height="68" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="flight.html">Flights</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" href="destinations.html">Destination</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="Booking.html">Booking</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="about.html">About Us</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="login.html">Login</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="signup.html">Sign Up</a></li>
+              <li class="nav-item dropdown px-3 px-lg-0"> <a class="d-inline-block ps-0 py-2 pe-3 text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN</a>
+                <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem;" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#!">EN</a></li>
+                  <li><a class="dropdown-item" href="#!">BN</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <div class="main" style="display:flex ; flex-direction: column; justify-content:end;gap: 3rem;"> 
+ <div class="main-flight" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+       <div class="mb-7 text-center">
+         <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize text-center">
+        Top Destinations
+      </h3>
+     
+    </div>
+    <div class="booking-container">
+      <h2>Book Your Flight</h2>
+      <form class="form-grid">
+        <div class="form-group">
+          <label for="trip-type">Trip Type</label>
+          <select id="trip-type">
+            <option value="round-trip">Round Trip</option>
+            <option value="one-way">One Way</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="flight-class">Class</label>
+          <select id="flight-class">
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+            <option value="first">First Class</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="from">From</label>
+          <input
+            type="text"
+            id="from"
+            placeholder="Enter Departure City or Airport"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="to">To</label>
+          <input
+            type="text"
+            id="to"
+            placeholder="Enter Destination City or Airport"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="departure-date">Departure Date</label>
+          <input type="date" id="departure-date" />
+        </div>
+
+        <div class="form-group">
+          <label for="departure-time">Departure Time</label>
+          <input type="time" id="departure-time" />
+        </div>
+
+        <div class="form-group" id="return-date-group">
+          <label for="return-date">Return Date</label>
+          <input type="date" id="return-date" />
+        </div>
+
+        <div class="form-group" id="return-time-group">
+          <label for="return-time">Return Time</label>
+          <input type="time" id="return-time" />
+        </div>
+
+        <div class="form-group">
+          <label for="passengers">Passengers</label>
+          <input type="number" id="passengers" min="1" max="10" value="1" />
+        </div>
+
+        <div class="form-group full-width">
+          <button type="submit">Search Flights</button>
+        </div>
+      </form>
+    </div>
+
+ </div>
+
+  <!-- ============================================-->
+      <!-- <section> begin Footer ============================-->
+      <section class="pb-0 pb-lg-4" style="float: inline-end;">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0"> <img class="mb-4" src="assets/img/newimage/Chalo ghume-logo-transparent.png" width="250" alt="Chalo Ghoume" />
+              <p class="fs--1 text-secondary mb-0 fw-medium">Book your trip in minute, get full Control for much longer.</p>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Company</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html">About Us </a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://forms.gle/nUjfJ2g92fmpHKmz9" target="_blank">Careers</a></li>
+                
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Contact</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Mob- 9911901131</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="aadeshwork0011@gmail.com">Email</a></li>
+                
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">More</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="flight.html">Airline fees</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="flight.html">Flights</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="Booking.html">Low fare destination</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
+              <div class="icon-group mb-4"> <a class="text-decoration-none icon-item shadow-social" id="facebook" href="https://www.facebook.com/profile.php?id=100070528234520" target="_blank"><i class="fab fa-facebook-f"> </i></a><a class="text-decoration-none icon-item shadow-social" id="instagram" href="https://www.instagram.com/aadi.17_/  " target="_blank"><i class="fab fa-instagram"> </i></a><a class="text-decoration-none icon-item shadow-social" id="twitter" href="https://x.com/AadeshGami24161" target="_blank"><i class="fab fa-twitter"> </i></a></div>
+              <h4 class="fw-medium font-sans-serif text-secondary mb-3">Discover our app</h4>
+              <div class="d-flex align-items-center"> <a href="#!"> <img class="me-2" src="assets/img/play-store.png" alt="play store" /></a><a href="#!"> <img src="assets/img/apple-store.png" alt="apple store" /></a></div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> Footrt close ============================-->
+      <!-- ============================================-->
+
+</div> 
+ 
+    <script>
+      const tripType = document.getElementById("trip-type");
+      const returnDateGroup = document.getElementById("return-date-group");
+      const returnTimeGroup = document.getElementById("return-time-group");
+
+      tripType.addEventListener("change", () => {
+        const isOneWay = tripType.value === "one-way";
+        returnDateGroup.style.display = isOneWay ? "none" : "flex";
+        returnTimeGroup.style.display = isOneWay ? "none" : "flex";
+      });
+    </script>
+    
+  </body>
+</html>

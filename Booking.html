@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link href="assets/css/theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/newimage/Chalo ghume-logo-transparent.png" height="68" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="flight.html">Flights</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" href="destinations.html">Destination</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="Booking.html">Booking</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="about.html">About Us</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="login.html">Login</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="signup.html">Sign Up</a></li>
+              <li class="nav-item dropdown px-3 px-lg-0"> <a class="d-inline-block ps-0 py-2 pe-3 text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN</a>
+                <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem;" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#!">EN</a></li>
+                  <li><a class="dropdown-item" href="#!">BN</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+        <div class="container">
+          <div class="d-flex justify-content-center align-items-center" 
+     style="min-height: 100vh; ">
+
+  <div class="card shadow-lg p-5" 
+       style="width: 100%; max-width: 900px; border-radius: 20px; background: #ffffffee; backdrop-filter: blur(6px); border: 1px solid #ddd;">
+    
+    <h2 class="fw-bold mb-4 text-center fw-bold font-cursive text-capitalize">Book Your Trip</h2>
+
+    <form>
+      <!-- Destination -->
+     <div class="mb-3">
+  <label class="form-label fw-medium font-cursive text-capitalize">Choose Destination</label>
+  <select class="form-select font-cursive text-capitalize js-example-basic-single" style="width: 100%;">
+    <option selected disabled>Select Destination</option>
+
+    <!-- Famous Indian Travel Cities -->
+    <option value="Delhi">New Delhi</option>
+    <option value="Jaipur">Jaipur</option>
+    <option value="Goa">Goa</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Kolkata">Kolkata</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Bangalore">Bengaluru</option>
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Agra">Agra</option>
+    <option value="Varanasi">Varanasi</option>
+    <option value="Rishikesh">Rishikesh</option>
+    <option value="Manali">Manali</option>
+    <option value="Shimla">Shimla</option>
+    <option value="Darjeeling">Darjeeling</option>
+    <option value="Ooty">Ooty</option>
+    <option value="Mysore">Mysore</option>
+    <option value="Udaipur">Udaipur</option>
+    <option value="Amritsar">Amritsar</option>
+    <option value="Leh-Ladakh">Leh-Ladakh</option>
+    <option value="Kashmir">Kashmir (Srinagar, Gulmarg, Pahalgam)</option>
+    <option value="Kerala">Kerala (Munnar, Alleppey, Kochi)</option>
+    <option value="Andaman">Andaman & Nicobar Islands</option>
+    <option value="Pondicherry">Pondicherry</option>
+    <option value="Khajuraho">Khajuraho</option>
+    <option value="Jaisalmer">Jaisalmer</option>
+    <option value="Mount-Abu">Mount Abu</option>
+    <option value="Coorg">Coorg</option>
+    <option value="Shillong">Shillong</option>
+    <option value="Gangtok">Gangtok (Sikkim)</option>
+  </select>
+</div>
+
+
+      <!-- Dates -->
+      <div class="row ">
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-medium font-cursive text-capitaliz">Start Date</label>
+          <input type="date" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-medium font-cursive text-capitaliz">End Date</label>
+          <input type="date" class="form-control" />
+        </div>
+      </div>
+
+      <!-- Number of People -->
+      <div class="mb-3">
+        <label class="form-label fw-medium font-cursive text-capitaliz">Number of People</label>
+        <input type="number" class="form-control" min="1" value="1" />
+      </div>
+
+      <!-- Budget -->
+      <div class="mb-3">
+        <label class="form-label fw-medium font-cursive text-capitaliz">Budget (per person)</label>
+        <select class="form-select">
+          <option selected disabled>Select Budget</option>
+          <option value="5000">₹5,000 - ₹10,000</option>
+          <option value="20000">₹10,000 - ₹20,000</option>
+          <option value="50000">₹20,000 - ₹50,000</option>
+          <option value="100000">Above ₹50,000</option>
+        </select>
+      </div>
+
+      <!-- Travel Type -->
+      <div class="mb-4">
+        <label class="form-label fw-medium font-cursive text-capitaliz">Travel Type</label>
+        <select class="form-select">
+          <option selected disabled>Select Type</option>
+          <option value="Solo">Solo</option>
+          <option value="Couple">Couple</option>
+          <option value="Family">Family</option>
+          <option value="Friends">Friends</option>
+          <option value="Business">Business</option>
+        </select>
+      </div>
+
+      <!-- Submit -->
+      <div class="text-center">
+        <button type="submit" 
+                class="btn btn-primary px-5 py-2 fw-bold" 
+                style="border-radius: 10px; box-shadow: 0px 4px 12px rgba(0,0,0,0.3);">
+          Book Now
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+            <br>
+            <br>
+            <br>
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="mb-4 text-start">
+                <h5 class="text-secondary">Easy and Fast </h5>
+                <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Book your next trip in 3 easy steps</h3>
+              </div>
+              <div class="d-flex align-items-start mb-5">
+                <div class="bg-primary me-sm-4 me-3 p-3" style="border-radius: 13px"> <img src="assets/img/steps/selection.svg" width="22" alt="steps" /></div>
+                <div class="flex-1">
+                  <h5 class="text-secondary fw-bold fs-0">Choose Destination</h5>
+                  <p>Choose your favourite place. No matter <br class="d-none d-sm-block"> where you travel inside the World.</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-5">
+                <div class="bg-danger me-sm-4 me-3 p-3" style="border-radius: 13px"> <img src="assets/img/steps/water-sport.svg" width="22" alt="steps" /></div>
+                <div class="flex-1">
+                  <h5 class="text-secondary fw-bold fs-0">Make Payment</h5>
+                  <p>After find your perfect spot, make your <br class="d-none d-sm-block"> payment and get ready to travel.</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-5">
+                <div class="bg-info me-sm-4 me-3 p-3" style="border-radius: 13px"> <img src="assets/img/steps/taxi.svg" width="22" alt="steps" /></div>
+                <div class="flex-1">
+                  <h5 class="text-secondary fw-bold fs-0">Reach Airport on Selected Date</h5>
+                  <p>Lastly, you have to arrive at the airport <br class="d-none d-sm-block"> on time and enjoy the vacation.</p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-6 d-flex justify-content-center align-items-start">
+              <div class="card position-relative shadow" style="max-width: 370px;">
+                <div class="position-absolute z-index--1 me-10 me-xxl-0" style="right:-160px;top:-210px;"> <img src="assets/img/steps/bg.png" style="max-width:550px;" alt="shape" /></div>
+                <div class="card-body p-3"> <img class="mb-4 mt-2 rounded-2 w-100" src="assets/img/cityimg/Kerela.jpg" alt="booking" style="max-height: 300px;"/>
+                  <div>
+                    <h5 class="fw-medium">Trip To Kerela</h5>
+                    <p class="fs--1 mb-3 fw-medium">14-29 Sep | by Aadi Singh</p>
+                    <div class="icon-group mb-4"> <span class="btn icon-item"> <img src="assets/img/steps/leaf.svg" alt=""/></span><span class="btn icon-item"> <img src="assets/img/steps/map.svg" alt=""/></span><span class="btn icon-item"> <img src="assets/img/steps/send.svg" alt=""/></span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center mt-n1"><img class="me-3" src="assets/img/steps/building.svg" width="18" alt="building" /><span class="fs--1 fw-medium">24 people going</span></div>
+                      <div class="show-onhover position-relative">
+                        <div class="card hideEl shadow position-absolute end-0 start-xl-50 bottom-100 translate-xl-middle-x ms-3" style="width: 260px;border-radius:18px;">
+                          <div class="card-body py-3">
+                            <div class="d-flex">
+                              <div style="margin-right: 10px"> <img class="rounded-circle" src="assets/img/steps/favorite-placeholder.png" width="50" alt="favorite" /></div>
+                              <div>
+                                <p class="fs--1 mb-1 fw-medium">Upcoming </p>
+                                <h5 class="fw-medium mb-3">Trip to Kerala</h5>
+                                <h6 class="fs--1 fw-medium mb-2"><span>40%</span> completed</h6>
+                                <div class="progress" style="height: 6px;">
+                                  <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn"> <img src="assets/img/steps/heart.svg" width="20" alt="step" /></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+
+
+         <!-- ============================================-->
+      <!-- <section> begin Footer ============================-->
+      <section class="pb-0 pb-lg-4">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0"> <img class="mb-4" src="assets/img/newimage/Chalo ghume-logo-transparent.png" width="250" alt="Chalo Ghoume" />
+              <p class="fs--1 text-secondary mb-0 fw-medium">Book your trip in minute, get full Control for much longer.</p>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Company</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html">About Us </a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://forms.gle/nUjfJ2g92fmpHKmz9" target="_blank">Careers</a></li>
+                
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Contact</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Mob- 9911901131</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="aadeshwork0011@gmail.com">Email</a></li>
+                
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">More</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="flight.html">Airline fees</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="flight.html">Flights</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="Booking.html">Low fare destination</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
+              <div class="icon-group mb-4"> <a class="text-decoration-none icon-item shadow-social" id="facebook" href="https://www.facebook.com/profile.php?id=100070528234520" target="_blank"><i class="fab fa-facebook-f"> </i></a><a class="text-decoration-none icon-item shadow-social" id="instagram" href="https://www.instagram.com/aadi.17_/  " target="_blank"><i class="fab fa-instagram"> </i></a><a class="text-decoration-none icon-item shadow-social" id="twitter" href="https://x.com/AadeshGami24161" target="_blank"><i class="fab fa-twitter"> </i></a></div>
+              <h4 class="fw-medium font-sans-serif text-secondary mb-3">Discover our app</h4>
+              <div class="d-flex align-items-center"> <a href="#!"> <img class="me-2" src="assets/img/play-store.png" alt="play store" /></a><a href="#!"> <img src="assets/img/apple-store.png" alt="apple store" /></a></div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> Footrt close ============================-->
+      <!-- ============================================-->
+
+        
+      
+
+<!-- jQuery (needed for Select2) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+$(document).ready(function() {
+// Initialize Select2 on the destination select
+$('.js-example-basic-single').select2({
+placeholder: "Search or select a city",
+allowClear: true,
+width: 'resolve'
+});
+
+
+// Handle form submission and show SweetAlert2 popup
+$('#bookingForm').on('submit', function(e) {
+e.preventDefault(); // Prevent page reload
+
+
+Swal.fire({
+title: 'Thank you! 🌟',
+html: 'Our team will connect with you within <b>24 hours</b>.',
+icon: 'success',
+confirmButtonText: 'Okay'
+}).then(() => {
+// Optional: reset the form after user closes the popup
+this.reset();
+// Reset Select2 value
+$('.js-example-basic-single').val(null).trigger('change');
+});
+});
+});
+</script>
+
+
+
+    
+</body>
+</html>
